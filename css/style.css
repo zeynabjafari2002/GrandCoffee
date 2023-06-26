@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../font/Poppins-Regular.ttf);
+}
+:root{
+    --color1:#dc3545;
+    --color2:#252525;
+    --color3:#222;
+    --color4:#878787;
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+body{
+    font-family: 'Poppins';
+}
+.header{
+    background-image: url(../images/banner-bg.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuContainer{
+    width: 100%;
+    height: auto;
+    background-color: var(--color3);
+    display: flex;
+    justify-content: space-between;
+}
+.menuContainer h1 , ul li a{
+    color: #fff;
+    font-size: 18px;
+}
+.menuContainer ul li a{
+    text-decoration: none;
+    transition:  all ease 0.5s;
+}
+.menuContainer ul li{
+    display: inline;
+    padding: 0.5rem;
+}
+.menuContainer ul{
+    margin-right: 60px;
+    margin-top: 35px;
+}
+.menuContainer ul li a:hover{
+    color: var(--color1);
+}
+.homeBtn{
+    color:var(--color1)
+}
+.menuContainer h1{
+    font-size: 35px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* banner */
+.headerContainer1{
+    width: 85%;
+    margin: auto;
+    margin-top: 150px;
+}
+.headerContainer1 h1{
+    color: #fff;
+    font-size: 70px;
+}
+.headerContainer1 h1:first-child{
+    color: var(--color2);
+    font-size: 60px;
+}
+.headerContainer1 p{
+    color: #fff;
+    font-size: 15px;
+    width: 540px;
+}
+.headerContainer1 .infoBtn{
+    padding: 18px 40px;
+    background-color: var(--color3);
+    color: #fff;
+    outline: none;
+    border: none;
+    margin-top: 40px;
+}
+.nextPreBox1{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.nextPreBox1 button{
+    background-color: #fff;
+    color: var(--color3);
+    border: none;
+    outline: none;
+    font-size: 30px;
+    padding: 5px 15px;
+    margin-left: 20px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+.nextPreBox1 button:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+.headerContainer1 .infoBtn{
+    transition: 0.5s all ease;
+    cursor: pointer;
+}
+.headerContainer1 .infoBtn:hover{
+    background-color: var(--orange);
+}
+.headerContainer2{
+    display: none;
+}

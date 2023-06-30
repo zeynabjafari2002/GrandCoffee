@@ -78,38 +78,46 @@ body{
 }
 
 /* banner */
-.headerContainer1{
+.headerContainer1 , .headerContainer2{
     width: 85%;
-    margin: auto;
+    /* margin: auto; */
     margin-top: 150px;
+    display: none;
+    transform: translateX(15%)
 }
-.headerContainer1 h1{
+.active{
+    display: block;
+    transition: all 0.5s ease;
+}
+.headerContainer1 h1 , .headerContainer2 h1{
     color: #fff;
     font-size: 70px;
 }
-.headerContainer1 h1:first-child{
+.headerContainer1 h1:first-child , .headerContainer2 h1:first-child{
     color: var(--color2);
     font-size: 60px;
 }
-.headerContainer1 p{
+.headerContainer1 p , .headerContainer2 p{
     color: #fff;
     font-size: 15px;
     width: 540px;
 }
-.headerContainer1 .infoBtn{
+.headerContainer1 .infoBtn , .headerContainer2 .infoBtn{
     padding: 18px 40px;
     background-color: var(--color3);
     color: #fff;
     outline: none;
     border: none;
     margin-top: 40px;
+    transition: 0.5s all ease;
+    cursor: pointer;
 }
-.nextPreBox1{
+.nextPreBox{
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
 }
-.nextPreBox1 button{
+.nextPreBox button{
     background-color: #fff;
     color: var(--color3);
     border: none;
@@ -120,17 +128,10 @@ body{
     transition: 0.5s all ease;
     cursor: pointer;
 }
-.nextPreBox1 button:hover{
+.nextPreBox button:hover{
     background-color: var(--orange);
     color: #fff;
 }
-.headerContainer1 .infoBtn{
-    transition: 0.5s all ease;
-    cursor: pointer;
-}
-.headerContainer1 .infoBtn:hover{
+.headerContainer1 .infoBtn:hover , .headerContainer2 .infoBtn:hover{
     background-color: var(--orange);
-}
-.headerContainer2{
-    display: none;
 }

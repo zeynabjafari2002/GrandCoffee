@@ -15,36 +15,34 @@ let index=0
 prevBtn.addEventListener('click' , ()=>{
     // headerContainer2.removeAttribute('style')
     if(index>=(slidesContainer.childElementCount)-1){
-        slidesContainer.children[index].classList.remove('active')
-        index=0
-        slidesContainer.children[index].classList.add('active')
+        slide1Func()
     }
     else if(index===0){
-        slidesContainer.children[index].classList.remove('active')
-        index=(slidesContainer.childElementCount)-1
-        slidesContainer.children[index].classList.add('active')
+        slide2Func()
     }
     
 })
 
 nextBtn.addEventListener('click' , ()=>{
     if(index===0){
-        slidesContainer.children[index].classList.remove('active')
-        index++
-        slidesContainer.children[index].classList.add('active')
+        slide2Func()
     }
     else if(index>=(slidesContainer.childElementCount)-1){
-        slidesContainer.children[index].classList.remove('active')
-        index=0
-        slidesContainer.children[index].classList.add('active')
+        slide1Func()
     }
 })
 
+function slide1Func() {
+    slidesContainer.children[index].classList.remove('active')
+    index=0
+    slidesContainer.children[index].classList.add('active')
+}
 
-
-
-
-
+function slide2Func(){
+    slidesContainer.children[index].classList.remove('active')
+    index=(slidesContainer.childElementCount)-1
+    slidesContainer.children[index].classList.add('active')
+}
 
 
 

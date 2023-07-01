@@ -135,3 +135,13 @@ body{
 .headerContainer1 .infoBtn:hover , .headerContainer2 .infoBtn:hover{
     background-color: var(--orange);
 }
+
+/* animation slide */
+@-webkit-keyframes moveToRight {
+    from { -webkit-transform: translateX(0%); }
+    to { -webkit-transform: translateX(15%); }
+}
+.headerContainer1 , .headerContainer2 {
+    -webkit-animation: moveToRight .8s ease both ;
+    animation: moveToRight .8s ease both ;
+}

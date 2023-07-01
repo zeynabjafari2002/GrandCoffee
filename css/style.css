@@ -145,3 +145,54 @@ body{
     -webkit-animation: moveToRight .8s ease both ;
     animation: moveToRight .8s ease both ;
 }
+
+/* about section */
+.aboutSection{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    padding-top: 150px;
+}
+.aboutImgContainer , .aboutInfoContainer{
+    width: 100%;
+}
+.aboutInfoContainer{
+    padding: 120px 150px;
+}
+.aboutInfoContainer div{
+    color: var(--orange);
+    font-size: 40px;
+    font-weight: 700;
+}
+.aboutInfoContainer p{
+    color: #4c4c4b;
+    padding-bottom: 10px;
+}
+.aboutInfoContainer button{
+    width: 175px;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: var(--color3);
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.aboutInfoContainer button:hover{
+    background-color: var(--orange);
+    color: #fff;
+}
+.aboutImgContainer{
+    display: flex;
+    justify-content: center;
+}
+.aboutImgContainer img{
+    width: 76%;
+}
+
+
+

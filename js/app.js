@@ -13,7 +13,6 @@ let index=0
 
 
 prevBtn.addEventListener('click' , ()=>{
-    // headerContainer2.removeAttribute('style')
     if(index>=(slidesContainer.childElementCount)-1){
         slide1Func()
     }
@@ -48,10 +47,25 @@ function slide2Func(){
 
 
 
+// gallery section
+// let searchImgs=$.querySelectorAll('.searchImg')
+// searchImgs.forEach(
+//     function (item){
+//         item.addEventListener('mouseover',()=>{
+//             let imgElem=$.createElement('img')
+//             imgElem.setAttribute('src','../images/search-icon.png')
+//             item.append(imgElem)
+//         })
+//     }
+// )
 
-
-
-
+// let imgBox1=$.querySelector('.imgBox1')
+// function addSearchImg(){
+//     let imgElem=$.createElement('img')
+//     imgElem.setAttribute('src','../images/search-icon.png')
+//     imgBox1.append(imgElem)
+//     console.log('test');
+// }
 
 
 

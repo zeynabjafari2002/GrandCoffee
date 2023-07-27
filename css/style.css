@@ -142,8 +142,8 @@ body{
     to { -webkit-transform: translateX(15%); }
 }
 .headerContainer1 , .headerContainer2 {
-    -webkit-animation: moveToRight .8s ease both ;
-    animation: moveToRight .8s ease both ;
+    -webkit-animation: moveToRight 1s ease both ;
+    animation: moveToRight 1s ease both ;
 }
 
 /* about section */
@@ -218,20 +218,20 @@ body{
     width: 83%;
     margin: auto;
 }
-.imgBox1 , .imgBox2 , .imgBox3{
+.imgContainer1 , .imgContainer2 , .imgContainer3{
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.imgBox1 img{
+.imgContainer1 img{
     width: 350px;
     cursor: pointer;
     transition: all ease 0.6s;
 }
-.imgBox1 img:hover , .imgBox2 img:hover , .imgBox3 img:hover{
+.imgContainer1 img:hover , .imgContainer2 img:hover , .imgContainer3 img:hover{
     opacity: 0.4;
 }
-.imgBox2 img , .imgBox3 img{
+.imgContainer2 img , .imgContainer3 img{
     width: 350px;
     height: 330px;
     cursor: pointer;
@@ -254,6 +254,29 @@ body{
     background-color: var(--orange);
     color: #fff;
 }
-
-
-
+.uil-search{
+    z-index: 1;
+    font-size: 60px;
+    color: black;
+    position: absolute;
+    top: 130px;
+    left: 150px;
+}
+.galleryImg:hover{
+    color: black;
+    font-size: 60px;
+}
+.imgBox{
+    width: 350px;
+    height: 330px;
+}
+.boxImg1{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+.boxImg2 , .boxImg3 , .boxImg4 , .boxImg5 , .boxImg6 , .boxImg7 , .boxImg8 , .boxImg9{
+    position: relative;
+    width: 350px;
+    height: 330px;
+}

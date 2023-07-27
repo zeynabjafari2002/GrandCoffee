@@ -48,32 +48,97 @@ function slide2Func(){
 
 
 // gallery section
-// let searchImgs=$.querySelectorAll('.searchImg')
-// searchImgs.forEach(
-//     function (item){
-//         item.addEventListener('mouseover',()=>{
-//             let imgElem=$.createElement('img')
-//             imgElem.setAttribute('src','../images/search-icon.png')
-//             item.append(imgElem)
-//         })
-//     }
-// )
+let iElem=null
+let galleryImgs=$.querySelectorAll('.galleryImg')
 
-// let imgBox1=$.querySelector('.imgBox1')
-// function addSearchImg(){
-//     let imgElem=$.createElement('img')
-//     imgElem.setAttribute('src','../images/search-icon.png')
-//     imgBox1.append(imgElem)
-//     console.log('test');
-// }
+let boxImg1=$.querySelector('.boxImg1')
+let img1=$.querySelector('.img1')
+img1.addEventListener('mouseover' , ()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg1.appendChild(iElem)
+})
 
 
+let boxImg2=$.querySelector('.boxImg2')
+let img2=$.querySelector('.img2')
+img2.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg2.append(iElem)
+})
 
 
+let boxImg3=$.querySelector('.boxImg3')
+let img3=$.querySelector('.img3')
+img3.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg3.append(iElem)
+})
 
 
+let boxImg4=$.querySelector('.boxImg4')
+let img4=$.querySelector('.img4')
+img4.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg4.append(iElem)
+})
 
 
+let boxImg5=$.querySelector('.boxImg5')
+let img5=$.querySelector('.img5')
+img5.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg5.append(iElem)
+})
+
+
+let boxImg6=$.querySelector('.boxImg6')
+let img6=$.querySelector('.img6')
+img6.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg6.append(iElem)
+})
+
+
+let boxImg7=$.querySelector('.boxImg7')
+let img7=$.querySelector('.img7')
+img7.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg7.append(iElem)
+})
+
+
+let boxImg8=$.querySelector('.boxImg8')
+let img8=$.querySelector('.img8')
+img8.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg8.append(iElem)
+})
+
+
+let boxImg9=$.querySelector('.boxImg9')
+let img9=$.querySelector('.img9')
+img9.addEventListener('mouseover',()=>{
+    iElem=$.createElement('i')
+    iElem.classList.add('uil' , 'uil-search')
+    boxImg9.append(iElem)
+})
+
+
+galleryImgs.forEach(
+    function (item){
+        item.addEventListener('mouseout' , ()=>{
+            iElem.remove()
+        })
+    }
+)
 
 
 

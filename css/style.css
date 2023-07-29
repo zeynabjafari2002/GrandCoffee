@@ -256,11 +256,12 @@ body{
 }
 .uil-search{
     z-index: 1;
-    font-size: 60px;
+    font-size: 70px;
     color: black;
     position: absolute;
     top: 130px;
     left: 150px;
+    font-weight:bolder;
 }
 .galleryImg:hover{
     color: black;
@@ -280,3 +281,99 @@ body{
     width: 350px;
     height: 330px;
 }
+
+/* services section */
+.servicesSection{
+    width: 100%;
+    height: auto;
+    background-image: url('../images/services-bg.png') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(2,200px , 1fr);
+    gap: 55px;
+}
+.textBox h1{
+    font-size: 40px;
+    color: var(--light);
+    text-align: center;
+    padding-top: 100px;
+}
+.textBox p{
+    text-align: center;
+    color: var(--light);
+    padding-top: 20px;
+}
+.optionsBox{
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.coffeesBox{
+    width: 350px;
+    height: auto;
+    background-color: #f76d37;
+}
+.coffeesBox i{
+    color: var(--teal);
+    font-size: 60px;
+    padding-left: 40%;
+}
+.coffeesBox h3 , p{
+    color: var(--light);
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.coffeesBox h3{
+    font-size: 29px;
+    font-weight: lighter;
+}
+.coffeesBox p{
+    font-weight: lighter;
+    font-size: 13px;
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+.coffeesBox button{
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 15px;
+    color: var(--light);
+    background-color: black;
+    border: none;
+    outline: none;
+    padding: 12px 30px;
+    margin-left: 29%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

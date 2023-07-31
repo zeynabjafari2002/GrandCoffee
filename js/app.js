@@ -142,9 +142,7 @@ galleryImgs.forEach(
 
 
 
-
-
-
+// services section
 
 
 

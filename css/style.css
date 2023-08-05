@@ -33,6 +33,7 @@
     --danger: #dc3545;
     --light: #f8f9fa;
     --dark: #343a40;
+    --dark-orange:#f76d37;
 }
 body{
     font-family: 'Poppins';
@@ -80,7 +81,6 @@ body{
 /* banner */
 .headerContainer1 , .headerContainer2{
     width: 85%;
-    /* margin: auto; */
     margin-top: 150px;
     display: none;
     transform: translateX(15%)
@@ -288,8 +288,6 @@ body{
     height: auto;
     background-attachment: fixed;
     background-image: url('../images/services-bg.png') ;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     display: grid;
     grid-template-rows: repeat(2,200px , 1fr);
@@ -371,10 +369,99 @@ body{
 }
 
 
-
-
-
-
+/* testimonial section */
+.testimonialContainer{
+    width: 100%;
+    height:auto;
+}
+.testimonialContainer .titleContainer{
+    width: 77%;
+    margin: auto;
+    margin-top: 120px;
+}
+.titleContainer h1{
+    font-size: 40px;
+    color: var(--dark-orange);
+}
+.titleContainer p{
+    color: var(--color2);
+    text-align: left;
+    padding:18px 0;
+}
+/* .sliderContainer */
+.boxSlide1 , .boxSlide2 , .boxSlide3{
+    width: 77%;
+    height: auto;
+    display: none;
+    position: relative;
+    transform: translateX(15%);
+    margin-top: 40px;
+}
+@-webkit-keyframes moveToRight {
+    from { -webkit-transform: translateX(0%); }
+    to { -webkit-transform: translateX(15%); }
+}
+.boxSlide1 , .boxSlide2 , .boxSlide3 {
+    -webkit-animation: moveToRight .5s ease both ;
+    animation: moveToRight .5s ease both ;
+}
+.boxSlide1 h4 , .boxSlide2 h4 , .boxSlide3 h4{
+    font-size: 21px;
+    color: var(--dark-orange);
+    padding: 0 140px;
+}
+.boxSlide1 p , .boxSlide2 p , .boxSlide3 p{
+    color: var(--color2);
+    padding: 15px 30px;
+    text-align: left;
+}
+.boxSlide1 h4::before , .boxSlide2 h4::before , .boxSlide3 h4::before{
+    content: '';
+    position: absolute;
+    border-bottom: 3px var(--color3) solid;
+    border-right: 3px solid var(--color3);
+    width: 100px;
+    height: 150px;
+    top: 12px;
+    left: initial;
+    right: 0;
+}
+.boxSlide1 h4::after , .boxSlide2 h4::after , .boxSlide3 h4::after{
+    position: absolute;
+    content: '';
+    border-top: var(--color3) solid 3px;
+    border-left: var(--color3) solid 3px;
+    right: initial;
+    left: 0;
+    top: 12px;
+    width: 100px;
+    height: 150px;
+}
+.slideButtonsContainer{
+    width: 14%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+.slideBtn1 , .slideBtn2 , .slideBtn3{
+    width: 60px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: var(--color3);
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.activeSlide{
+    display: block;
+    transition: all 0.5s ease;
+}
+.activeBtn{
+    background-color: var(--dark-orange);
+}
 
 
 

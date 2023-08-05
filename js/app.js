@@ -142,8 +142,44 @@ galleryImgs.forEach(
 
 
 
-// services section
+// Testimonial section
+let testimonialSliderContainer=$.querySelector('.testimonialSliderContainer')
+let boxSlide1=$.querySelector('.boxSlide1')
+let boxSlide2=$.querySelector('.boxSlide2')
+let boxSlide3=$.querySelector('.boxSlide3')
+let slideBtn1=$.querySelector('.slideBtn1')
+let slideBtn2=$.querySelector('.slideBtn2')
+let slideBtn3=$.querySelector('.slideBtn3')
 
+slideBtn1.addEventListener('click' , ()=>{
+    boxSlide1.classList.add('activeSlide')
+    slideBtn1.classList.add('activeBtn')
+
+    boxSlide2.classList.remove('activeSlide')
+    boxSlide3.classList.remove('activeSlide')
+    slideBtn2.classList.remove('activeBtn')
+    slideBtn3.classList.remove('activeBtn')
+})
+
+slideBtn2.addEventListener('click' , ()=>{
+    boxSlide2.classList.add('activeSlide')
+    slideBtn2.classList.add('activeBtn')
+
+    boxSlide1.classList.remove('activeSlide')
+    boxSlide3.classList.remove('activeSlide')
+    slideBtn1.classList.remove('activeBtn')
+    slideBtn3.classList.remove('activeBtn')
+})
+
+slideBtn3.addEventListener('click' , ()=>{
+    boxSlide3.classList.add('activeSlide')
+    slideBtn3.classList.add('activeBtn')
+
+    boxSlide2.classList.remove('activeSlide')
+    boxSlide1.classList.remove('activeSlide')
+    slideBtn2.classList.remove('activeBtn')
+    slideBtn1.classList.remove('activeBtn')
+})
 
 
 

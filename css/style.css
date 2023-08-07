@@ -464,7 +464,65 @@ body{
 }
 
 
-
+/* contact us section */
+.contactSection{
+    width: 100%;
+    height: auto;
+}
+.contactSection h1{
+    font-size: 42px;
+    text-transform: capitalize;
+    color: var(--dark-orange);
+    text-align: center;
+    padding: 50px 0;
+}
+.formLocationContainer{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 60px;
+}
+.formBox{
+    background-image: url('../images/img-9.png');
+    background-repeat: no-repeat;
+    height: auto;
+    background-size: 680px 520px;
+}
+.formBox form{
+    padding: 50px 70px;
+    height: auto;
+}
+.formBox form input{
+    width: 525px;
+    padding: 17px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-bottom: 12px;
+    border-radius: 50px;
+}
+.formBox form .MassageInput{
+    height: 140px;
+    margin-bottom: 40px
+}
+.formBox form .submitInput{
+    width: 150px;
+    background-color: #d33a11;
+    color: var(--light);
+    font-size: 14px;
+    margin: 0 35%;
+    cursor: pointer;
+    transition: all ease 0.5s ;
+}
+.formBox form .submitInput:hover{
+    background-color: var(--light);
+    color: black;
+}
+.locationBox {
+    width: 400px;
+    margin: auto;
+}
 
 
 

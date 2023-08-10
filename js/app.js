@@ -180,9 +180,3 @@ slideBtn3.addEventListener('click' , ()=>{
     slideBtn2.classList.remove('activeBtn')
     slideBtn1.classList.remove('activeBtn')
 })
-
-
-
-
-
-
